@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+//P02 c007
+int main() {
+    char c;
+    bool flag = true;
+    while (cin.get(c)) {
+        if (c == '"') {
+            cout << (flag ? "``" : "''");
+            flag = !flag;
+        } else cout << c;
+    }
+    return 0;
+}
